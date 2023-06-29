@@ -1,0 +1,44 @@
+* {
+
+    box-sizing: border-box;
+  }
+body{
+    background-color: blue;
+    background-image:url("https://www.transparenttextures.com/patterns/black-thread.png"); ;
+}
+.navContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    align-content: center;
+}
+.nav{
+    flex-basis: auto;
+    
+}
+.navItems{
+    margin-right: 4px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 2rem;
+}
+.border-items{
+    border: 1px solid white;
+}
+#download-btn{
+    margin-left: 5rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px;
+}
+.resurface-logo{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 25rem;
+    margin-top: 2rem;
+    
+}
