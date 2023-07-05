@@ -1,31 +1,60 @@
 import React, {useState} from "react";
 import logo from "../assests/resurface-logo.png"
+import NavLinks from "./NavLinks";
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 
-function NavBar(props){
+function NavBar(){
 
-    const [isHover, setBorder] = useState(false);
-    function handleOver(){
-        setBorder(true);
+    const links = 
+    [
+      {name: "FEATURE"},
+      {name: "OUR THEME"},
+      {name: "PRICING"},
+      {name: "CONTACT US"},
+     ]
+
+    function createNavLink(navdetail){
+        return(
+            <NavLinks
+                linkName={navdetail.name}
+            />
+        )
     }
+
+    const [isHover, setHover] = useState(false);
+    const [isMenu, setMenu] = useState(false);
+
+    function handlMouseOver(){
+        setHover(true)
+    }
+
     function handleMouseOut(){
-        setBorder(false);
+        setHover(false)
+    }
+    function handleClick(){
+        setMenu(true)
     }
 
+    
 
     return(
         <div className="navContainer">
             <nav className="nav">
             <img  className="resurface-logo" src={logo} alt="#"></img>
                 <a href="/#" className="navItems border-items">HOME</a>
-                <a href="/#" onMouseOut={handleMouseOut} onMouseOver={handleOver} style={isHover ? {border: "1px solid white"}: {}} className="navItems">FEATURE</a>
-                <a href="/#" onMouseOut={handleMouseOut} onMouseOver={handleOver} style={isHover ? {border: "1px solid white"}: {}} className="navItems">OUR THEME</a>
-                <a href="/#" onMouseOut={handleMouseOut} onMouseOver={handleOver} style={isHover ? {border: "1px solid white"}: {}} className="navItems">PRICING</a>
-                <a href="/#" onMouseOut={handleMouseOut} onMouseOver={handleOver} style={isHover ? {border: "1px solid white"}: {}} className="navItems">CONTACT US</a>
-                <a href="/#" onMouseOut={handleMouseOut} onMouseOver={handleOver} style={isHover ? {border: "1px solid white"}: {}} className="navItems" id="download-btn">DOWNLOAD</a>
-            </nav>
-            <hr style={{color:"green"}}/>
+                {links.map(createNavLink)}
+                <a href="/#" className="navItems" id="download-btn">DOWNLOAD</a>
+                <button id="navMenu" onClick={handleClick}>
+                <MenuIcon className="navMenu" />
+                </button>
+            </nav>      
+            <div className="menuItems" style={isMenu ? {display:"flex"}:{}}>
+                  <a href="/#" className="navItems border-items">HOME</a>
+                   {links.map(createNavLink)}
+                 <a href="/#" className="navItems" onMouseOver={handlMouseOver} onMouseOut={handleMouseOut} style={isHover ? {border: "1px solid white"} : {} }>DOWNLOAD</a>
+            </div> 
         </div>
     )
 }

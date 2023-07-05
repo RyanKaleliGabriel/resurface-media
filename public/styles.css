@@ -1,10 +1,9 @@
 * {
-
     box-sizing: border-box;
   }
 body{
     background-color: blue;
-    background-image:url("https://www.transparenttextures.com/patterns/black-thread.png"); ;
+    background-image:url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
 }
 .navContainer{
     display: flex;
@@ -26,6 +25,17 @@ body{
     color: white;
     margin-top: 2rem;
 }
+.navMenu{
+    margin-top: 2rem;
+    color: white;
+    background-color: black;
+    border-radius: 5px ;
+    padding: 1px;
+}
+#navMenu{
+    border: none;
+    background: none;
+}
 .border-items{
     border: 1px solid white;
 }
@@ -41,4 +51,29 @@ body{
     margin-right: 25rem;
     margin-top: 2rem;
     
+}
+.navrenders {
+    margin-top: 100px;
+}
+
+.menuItems{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: flex-end;
+    border: 2px solid white;
+    padding: 5px;
+    margin-top: 1rem;
+}
+@media (max-width:768px){
+    .navItems{
+        display: none;
+    }
+
+}
+@media (min-width:1024px){
+    #navMenu{
+        display: none;
+    }
+
 }
