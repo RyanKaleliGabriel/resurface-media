@@ -47,7 +47,7 @@ function NavBar(){
             <section id="navSection">
                 <a href="/#" className="navItems border-items">HOME</a>
                 {links.map(createNavLink)}
-                <a href="/#" className="navItems " id="download-btn">DOWNLOAD</a>
+                <a href="/#" className="btn-home"  id="download-btn">Download</a>
             </section>    
                 <button id="navMenu" onClick={toggleMenu}>
                 <MenuIcon className="navMenu" />

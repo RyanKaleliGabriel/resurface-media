@@ -42,9 +42,21 @@ body{
 }
 #download-btn{
     margin-left: 5rem;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 8px;
+    -webkit-border-radius: 17;
+    -moz-border-radius: 17;
+    border-radius: 17px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    background: blue;
+    padding: 10px 24px 10px 24px;
+    border: solid white 1px;
+    text-decoration: none;
+}
+#download-btn:hover{
+    background: #fff2ff;
+    text-decoration: none;
+    color: black;
 }
 .resurface-logo{
     height: 3rem;
@@ -73,6 +85,52 @@ body{
 #navSection{
     margin-top: 2rem;
 }
+.homeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-content: center;
+    margin-top: 5rem;
+}
+.homeItems{
+    flex-basis: 400px;
+    color: white;
+}
+.home-imgs{
+    width: 80%;
+    height: 80%;
+}
+.homeHeading{
+    margin-top: 3rem;
+    font-size: 40px;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+}
+.homeKeyWord{
+    text-decoration: underline;
+}
+.btn-home{
+    -webkit-border-radius: 17;
+    -moz-border-radius: 17;
+    border-radius: 17px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    background: blue;
+    padding: 5px 24px 5px 24px;
+    border: solid white 1px;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-top: 2rem;
+}
+.btn-home:hover {
+    background: #fff2ff;
+    text-decoration: none;
+    color: black;
+  }
 
 @media (max-width:768px){
     #navSection{
