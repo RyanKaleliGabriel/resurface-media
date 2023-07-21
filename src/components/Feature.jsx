@@ -1,27 +1,28 @@
 import React from "react";
 import Featureitems from "./pagecomponents/Featureitems";
 import feature from "../assests/feature.png";
+import Featureitems2 from "./pagecomponents/Featureitems2";
 
 function Feature() {
   const features = [
     {
-      icon: "icon",
+      icon: "fas fa-bell",
       heading: "Realtime Notifications",
       paragraph: "We provide both email and sms notifications",
     },
     {
-      icon: "icon",
+      icon: "fas fa-chart-line ",
       heading: "Trends",
       paragraph: "We provide real-time marketing trends of your brands.",
     },
     {
-      icon: "icon",
+      icon: "fas fa-users",
       heading: "Marketing/Influencing",
       paragraph:
         "Our app not only provides means for earning but empowers influencer's to reach a large audience with ease.",
     },
     {
-      icon: "icon",
+      icon: "fas fa-link",
       heading: "Link Posting/Sharing",
       paragraph:
         "We give your brand full access to post any social media link for marketing any service/product.",
@@ -29,46 +30,62 @@ function Feature() {
   ];
   const featuresTwo = [
     {
-      icon: "icon",
+      icon: "fas fa-chart-bar",
       heading: "Realtime Analytics",
       paragraph:
         "We provide different areas of analytics of how the market is reacting to your pages.",
     },
     {
-      icon: "icon",
+      icon: "fas fa-wallet",
       heading: "Influencer Earning",
       paragraph:
         "We credit all influencer's who use our platform for marketing.",
     },
     {
-      icon: "icon",
+      icon: "fas fa-user",
       heading: "Brand Awareness",
       paragraph:
         "Let people know what your businesss is all about in a day to day schedule.",
     },
     {
-      icon: "icon",
+      icon: "fas fa-headphones",
       heading: "Helping Supports",
       paragraph: "We provide 24/07 support on all areas of marketing.",
     },
   ];
 
   function createEntry(entrydetail) {
-    return(
-    <Featureitems
-      feticon={entrydetail.icon}
-      fetheading={entrydetail.heading}
-      fetparagraph={entrydetail.paragraph}
-    />
-    )
+    return (
+      <Featureitems
+        feticon={entrydetail.icon}
+        fetheading={entrydetail.heading}
+        fetparagraph={entrydetail.paragraph}
+      />
+    );
+  }
+
+  function createEntry2(entrydetail) {
+    return (
+      <Featureitems2
+        feticon={entrydetail.icon}
+        fetheading={entrydetail.heading}
+        fetparagraph={entrydetail.paragraph}
+      />
+    );
   }
   return (
-    <div className="featureContainer">
-      {features.map(createEntry)}
-      <div className="featureItems">
-      <img alt="" src={feature} style={{width:"100%"}}></img>
+    <div className="feature">
+      <div className="container">
+        <div className="first-features">{features.map(createEntry)}</div>
+        <div className="image-container">
+          <img
+            src={feature}
+            alt=""
+            style={{ width: "90%", height: "100%" }}
+          ></img>
+        </div>
+        <div className="second-features">{featuresTwo.map(createEntry2)}</div>
       </div>
-      {featuresTwo.map(createEntry)}
     </div>
   );
 }

@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
   }
+  body{
+    margin: 0;
+  }
 
 .navContainer{
     background-color:#00008B;
@@ -90,7 +93,6 @@
 }
 .homeContainer{
     background-color:#00008B;
-  
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -169,29 +171,59 @@
     flex-shrink: 1;
     margin-top: 3rem;
     margin-bottom: 5rem;
-
+  
   }
   .servicesChild{
     flex-basis: 300px;
     padding: 15px;
   }
-  .featureContainer{
+  .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-    background-color: #00008B;
+  }
+  .first-features {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 9rem;
+    /* margin-bottom: 9rem; */
+    text-align: right;
     color: white;
   }
-  .featureItems{
-    flex-basis: 100px;
+  .firstfeature {
+    margin-bottom: 20px;
   }
+  .firstfeature p,
+  .firstfeature h4 {
+    margin-right: 4rem;
+  }
+  .image-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+    /* margin-bottom: 5rem; */
+  }
+  .second-features {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 9rem;
+    /* margin-bottom: 9rem; */
+    text-align: left;
+    color: white;
+  }
+  .secondfeature {
+    margin-bottom: 20px;
+  }
+  .secondfeature p,
+  .secondfeature h4{
+    margin-left: 4rem;
+  }
+  .feature{
+    background-color: #00008B;
+  }
+
+ 
 
 @media (max-width:768px){
     #navSection{

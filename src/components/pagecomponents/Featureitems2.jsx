@@ -1,25 +1,26 @@
 import React from "react";
 import { useState } from "react";
 
-function Featureitems(props) {
+function Featureitems2(props) {
   const [isHover, setHover] = useState(false);
 
   function handleMouseOver() {
     setHover(true);
   }
+
   function handleMouseOut() {
     setHover(false);
   }
 
   return (
     <div
-      className="firstfeature"
+      className="secondfeature"
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
       <i
         style={{
-          float: "right",
+          float: "left",
           padding: "10px",
           fontSize: "1rem",
           borderRadius: "50%",
@@ -36,4 +37,4 @@ function Featureitems(props) {
   );
 }
 
-export default Featureitems;
+export default Featureitems2;
