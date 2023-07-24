@@ -4,6 +4,8 @@ import Home from "./Home";
 import About from "./About";
 import Feature from "./Feature";
 import Work from "./Work";
+import Video from "./Video";
+import Theme from "./Theme";
 function App() {
   return (
     <div>
@@ -12,6 +14,8 @@ function App() {
         <About/>
         <Feature/>
         <Work/>
+        <Video/>
+        <Theme/>
     </div>
 
   );
