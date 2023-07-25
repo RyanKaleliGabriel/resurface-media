@@ -6,8 +6,7 @@ body {
 }
 
 .navContainer {
-  background-color: #00008b;
-
+  background: linear-gradient(to right,#00008b, #87CEEB);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -49,7 +48,7 @@ body {
   font-family: Arial;
   color: #ffffff;
   font-size: 16px;
-  background: #00008b;
+  background: none;
   padding: 10px 24px 10px 24px;
   border: solid white 1px;
   text-decoration: none;
@@ -85,10 +84,10 @@ body {
   margin-top: 2rem;
 }
 .navBox {
-  background-color: #00008b;
+  background: linear-gradient(to right,#00008b, #87CEEB);
 }
 .homeContainer {
-  background-color: #00008b;
+  background: linear-gradient(to right,#00008b, #87CEEB);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -123,7 +122,7 @@ body {
   font-family: Arial;
   color: #ffffff;
   font-size: 16px;
-  background: #00008b;
+  background: none;
   padding: 5px 24px 5px 24px;
   border: solid white 1px;
   text-decoration: none;
@@ -150,11 +149,37 @@ body {
 .centeredDivChild {
   flex-basis: 100px;
 }
+.bluecenteredDivParent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-top: 5rem; 
+  color: #fff;
+  background: linear-gradient(to right,#00008b, #87CEEB);
+}
+.bluecenteredDivChild {
+  flex-basis: 100px;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
 .horizontalLine {
   width: 30%;
   border: 2px solid black;
   margin: 0 auto;
   color: black;
+  margin-bottom: 1.5rem;
+}
+.bluehorizontalLine {
+  width: 30%;
+  border: 2px solid white;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 1.5rem;
 }
 .servicesParent {
   display: flex;
@@ -222,7 +247,7 @@ body {
   margin-left: 4rem;
 }
 .feature {
-  background-color: #00008b;
+  background: linear-gradient(to right,#00008b, #87CEEB);
 }
 .workItems img {
   width: 100%;
@@ -244,7 +269,7 @@ body {
 .workItems button {
   border-radius: 17px;
   width: 15%;
-  background-color: #00008b;
+  background: linear-gradient(to right,#00008b, #87CEEB);
   border: none;
   padding: 5px;
   color: #ffffff;
@@ -263,7 +288,7 @@ body {
   margin-bottom: 1rem;
 }
 .videoContainer {
-  background-color: #00008b;
+  background: linear-gradient(to right,#00008b, #87CEEB);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -360,7 +385,75 @@ swiper {
   width: 50%;
   height: 50%;
 } 
+.pricingParent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: linear-gradient(to right,#00008b, #87CEEB);
 
+}
+.pricingChild{
+  flex-basis: 250px;
+  margin-bottom: 5rem;
+  color: black;
+  background-color: #fff;
+  text-align: center;
+}
+.pricingChild h2{
+  margin-top: 1rem;
+  font-size: 2rem;
+  color:  skyblue;
+}
+.pricingChild p{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+ 
+}
+.pricingChild h1{
+  padding-top:4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: gray;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+}
+.hrpricing{
+  width: 80%;
+  text-align: center;
+  margin-left: 1.5rem;
+  color: black;
+}
+.ptype{
+ background-color: gray;
+ font-size: 15px;
+ margin-top: 2rem ;
+}
+.btn-pricing{
+  margin-bottom: 1rem;
+  border-radius: 17px;
+  padding: 5px;
+  width: 65%;
+  border: 1px solid gray;
+}
+.footerParent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.footerChild
+{
+  flex-basis: 300px;
+}
 
 @media (max-width: 768px) {
   #navSection {

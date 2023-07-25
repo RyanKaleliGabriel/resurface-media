@@ -6,6 +6,8 @@ import Feature from "./Feature";
 import Work from "./Work";
 import Video from "./Video";
 import Theme from "./Theme";
+import Pricing from "./Pricing";
+import Testimonial from "./Testimonial";
 function App() {
   return (
     <div>
@@ -16,6 +18,8 @@ function App() {
         <Work/>
         <Video/>
         <Theme/>
+        <Pricing/>
+        <Testimonial/>
     </div>
 
   );
