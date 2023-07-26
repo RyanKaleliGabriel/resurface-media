@@ -20,10 +20,10 @@ function Pricingitems(props) {
       <h2>{props.px}</h2>
       <p>{props.ptype}</p>
       <p style={{ fontStyle: "italic" }}>{props.pabout}</p>
-      <h1 style={isHover ? { background: "#0000eb", color: "white" } : {}}>
+      <h1 style={isHover ? { background: "#0b8cf4", color: "white" } : {}}>
         {props.ppricing}
         <p
-          style={isHover ? { background: "#0000eb", color: "white" } : {}}
+          style={isHover ? { background: "#0b8cf4", color: "white" } : {}}
           className="ptype"
         >
           {props.ptypetwo}
@@ -41,7 +41,7 @@ function Pricingitems(props) {
         ))}
       </div>
       <button
-        style={isHover ? { backgroundColor: "#0000eb", color: "white" } : {}}
+        style={isHover ? { backgroundColor: "#0b8cf4", color: "white" } : {}}
         className="btn-pricing"
       >
         {props.pbtn}

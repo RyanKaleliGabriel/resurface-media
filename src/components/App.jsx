@@ -8,6 +8,7 @@ import Video from "./Video";
 import Theme from "./Theme";
 import Pricing from "./Pricing";
 import Testimonial from "./Testimonial";
+import Footer from "./Footer";
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
         <Theme/>
         <Pricing/>
         <Testimonial/>
+        <Footer/>
     </div>
 
   );

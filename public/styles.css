@@ -440,7 +440,7 @@ swiper {
   width: 65%;
   border: 1px solid gray;
 }
-.footerParent{
+.footerParent, .footerFormsParent{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -448,13 +448,113 @@ swiper {
   flex-wrap: wrap;
   flex-grow: 1;
   flex-shrink: 1;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right,#00008b, #87CEEB);
 }
 
 .footerChild
 {
+  margin-top: 5rem;
+  flex-basis: 250px;
+}
+.footerChild button,
+.footerChild h1, 
+.footerChild h5{
+  margin-bottom: 1rem;
+}
+.btn-iconone{
+  padding: 2rem;
+  background-color: #0b8cf4;
+  border-radius: 100%;
+  border: none;
+}
+.footerFormsChild{
+  flex-basis: 500px;
+  height: auto;
+  background-color: white;
+  color: black;
+  padding: 4px;
+  text-align: left;
+}
+.footer-input{
+ margin-left: 4rem;
+ width: 70%;
+ margin-bottom: 1rem;
+ border: 1px solid gray;
+ padding: 6px;
+}
+.form-btn{
+  margin-left: 4rem;
+  border: 1px solid gray;
+  padding: 6px;
+  color: gray;
+  margin-bottom: 2.5rem;
+}
+.form-btn:hover{
+  background-color: #0b8cf4;
+  color: white;
+}
+.downloadParent, .downloadbtnParent{
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to right,#00008b, #87CEEB);
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+}
+.downloadChild{
+  color: #fff;
+  margin-top: 5rem;
+}
+.downloadbtnChild{
   flex-basis: 300px;
+  margin-top: 1rem;
+}
+.subscribeChild{
+  margin-top: 2.5rem;
+  flex-basis: 100%;
 }
 
+.footerdownloadbtn{
+  border-radius: 29px;
+  padding: 4px 1rem;
+  background: none;
+  border: 2px solid white;
+  color: #fff;
+  max-width: 75%;
+}
+.footerInput{
+  padding: 15px 10rem 15px 15px;
+  width: 40%;
+  border-radius: 29px;
+  border: none;
+  margin-left: 1rem;
+}
+.footerbutton{
+  padding: 15px 25px ;
+  border-radius: 29px;
+  border: none;
+  background-color: #0b8cf4;
+  color: #fff;
+}
+.footersmallIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  flex-grow: 1;
+  background: linear-gradient(to right,#00008b, #87CEEB);
+}
+
+.footersmallIconsChild{
+  margin-top: 2.5rem;
+}
 @media (max-width: 768px) {
   #navSection {
     display: none;
