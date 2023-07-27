@@ -83,6 +83,7 @@ function Footeritemtwo(props) {
   }
   return (
     <div className="downloadbtnChild">
+    <a href="https://play.google.com/store/apps/details?id=com.shiftechafrica.resurface">
       <button
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -98,6 +99,7 @@ function Footeritemtwo(props) {
           {props.heading}
         </p>
       </button>
+      </a>
     </div>
   );
 }

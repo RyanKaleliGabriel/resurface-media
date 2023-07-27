@@ -18,9 +18,16 @@ function Aboutitems(props) {
       className="servicesChild"
       style={isHover ? { border: "1px solid rgba(128, 128, 128, 0.3)" } : {}}
     >
-      <i className={props.servicon} style={{ marginBottom: "1.5rem" }}></i>
-      <h4 style={{ marginBottom: "1.5rem" }}>{props.servheading}</h4>
-      <p>{props.servparagraph}</p>
+      <i
+        className={props.servicon}
+        style={{
+          marginBottom: "1.5rem",
+          fontSize: "2rem",
+          color: isHover ? "black" : "#0b8cf4",
+        }}
+      ></i>
+      <h5 style={{ marginBottom: "1.5rem" }}>{props.servheading}</h5>
+      <p style={{color:"grey"}}>{props.servparagraph}</p>
     </div>
   );
 }

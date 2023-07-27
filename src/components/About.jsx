@@ -5,7 +5,7 @@ function About() {
     {
       key: 1,
       heading: "Social Media Link Sharing",
-      icon: "fas fa-share",
+      icon: "fas fa-link",
       paragraph:
         "To ensure that your brand is well known, one of the key areas is by social media marketing through link sharing across platforms.",
     },
@@ -19,7 +19,7 @@ function About() {
     {
       key: 3,
       heading: "Gradual Earning",
-      icon: "fas fa-dollar-sign",
+      icon: "fas fa-wallet",
       paragraph:
         "We provide credits to our influencer's who are able to share links and reach a large customer base.",
     },
@@ -40,7 +40,7 @@ function About() {
         <div className="centeredDivChild">
           <h2 style={{ marginBottom: "1.5rem" }}>About Resurface Media</h2>
           <hr className="horizontalLine" style={{ marginBottom: "1.5rem" }} />
-          <p>
+          <p style={{color:"grey"}}>
             Resurface Media is a marketing brand, that focuses on
             <span>
               <br />

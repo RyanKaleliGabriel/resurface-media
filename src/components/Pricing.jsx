@@ -81,7 +81,7 @@ function Pricing() {
   }
 
   return (
-    <div>
+    <div id="PRICING">
       <div className="bluecenteredDivParent" >
         <div className="bluecenteredDivChild">
           <h2 style={{ marginBottom: "1.5rem" }}>Our Pricing Plan</h2>

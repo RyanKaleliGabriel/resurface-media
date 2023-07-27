@@ -62,7 +62,7 @@ export default function Testimonial() {
         <div className="centeredDivChild">
           <h2 style={{ marginBottom: "1.5rem" }}>Testimonials</h2>
           <hr className="horizontalLine" style={{ marginBottom: "1.5rem" }} />
-          <p>How our community speaks about us.</p>
+          <p style={{color:"grey"}}>How our community speaks about us.</p>
         </div>
         <div className="themeContainer">
           <div className="themeitems">
@@ -112,7 +112,7 @@ export default function Testimonial() {
                       }}
                     />
                     <h5>{testimonial.name}</h5>
-                    <p>{testimonial.content}</p>
+                    <p style={{color:"grey"}}>{testimonial.content}</p>
                     <div>{renderstars()}</div>
                   </SwiperSlide>
                 ))}

@@ -43,12 +43,12 @@ const slides = [
 
 function Theme() {
   return (
-    <div>
+    <div id="THEME">
       <div className="centeredDivParent">
         <div className="centeredDivChild">
           <h2 style={{ marginBottom: "1.5rem" }}>Our Theme</h2>
           <hr className="horizontalLine" style={{ marginBottom: "1.5rem" }} />
-          <p>
+          <p style={{color:"grey"}}>
             We provide our service in most stylish way to ease the
             <span>
               <br />

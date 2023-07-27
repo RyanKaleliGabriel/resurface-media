@@ -18,8 +18,8 @@ function Pricingitems(props) {
       onMouseOut={handleMouseOut}
     >
       <h2>{props.px}</h2>
-      <p>{props.ptype}</p>
-      <p style={{ fontStyle: "italic" }}>{props.pabout}</p>
+      <p style={{color:"grey"}}>{props.ptype}</p>
+      <p style={{ fontStyle: "italic", color:"grey" }}>{props.pabout}</p>
       <h1 style={isHover ? { background: "#0b8cf4", color: "white" } : {}}>
         {props.ppricing}
         <p

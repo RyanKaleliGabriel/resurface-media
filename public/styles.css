@@ -4,9 +4,18 @@
 body {
   margin: 0;
 }
-
+h1, h2 h3, h4, h5{
+  font-family: 'Poppins', sans-serif;
+}
+p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+.workItems p {
+  color: gray;
+}
 .navContainer {
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -14,6 +23,8 @@ body {
   flex-shrink: 1;
   justify-content: center;
   align-content: center;
+  font-family: 'Poppins', sans-serif;
+  /* position: fixed; */
 }
 .nav {
   flex-basis: auto;
@@ -27,7 +38,6 @@ body {
   margin-left: 8px;
 }
 .navMenu {
-  margin-top: 2rem;
   color: white;
   background-color: black;
   border-radius: 5px;
@@ -36,6 +46,9 @@ body {
 #navMenu {
   border: none;
   background: none;
+  display: flex; /* Optional: Display the icon as a flex item */
+  align-items: center; /* Optional: Vertically center the icon */
+  margin-top: 5px;
 }
 .border-items {
   border: 1px solid white;
@@ -74,7 +87,7 @@ body {
   justify-content: center;
   align-content: center;
   border: 2px solid white;
-  margin-top: 5px;
+  margin-top: 9rem;
   float: right;
   margin-right: 5rem;
   padding: 5px;
@@ -84,10 +97,10 @@ body {
   margin-top: 2rem;
 }
 .navBox {
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
 }
 .homeContainer {
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -149,7 +162,7 @@ body {
 .centeredDivChild {
   flex-basis: 100px;
 }
-.bluecenteredDivParent{
+.bluecenteredDivParent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,9 +171,9 @@ body {
   flex-wrap: wrap;
   flex-grow: 1;
   flex-shrink: 1;
-  margin-top: 5rem; 
+  margin-top: 5rem;
   color: #fff;
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
 }
 .bluecenteredDivChild {
   flex-basis: 100px;
@@ -247,7 +260,7 @@ body {
   margin-left: 4rem;
 }
 .feature {
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
 }
 .workItems img {
   width: 100%;
@@ -269,13 +282,13 @@ body {
 .workItems button {
   border-radius: 17px;
   width: 15%;
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
   border: none;
   padding: 5px;
   color: #ffffff;
 }
 .workItems button:hover {
-  background-color: white;
+  background: linear-gradient(to right, white, white);
   border: 1px solid black;
   color: black;
 }
@@ -288,7 +301,7 @@ body {
   margin-bottom: 1rem;
 }
 .videoContainer {
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -381,11 +394,11 @@ swiper {
 .swiper-slide {
   width: 60%;
 }
- .swiper-slide img {
+.swiper-slide img {
   width: 50%;
   height: 50%;
-} 
-.pricingParent{
+}
+.pricingParent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -393,28 +406,26 @@ swiper {
   align-content: center;
   flex-grow: 1;
   flex-shrink: 1;
-  background: linear-gradient(to right,#00008b, #87CEEB);
-
+  background: linear-gradient(to right, #00008b, #87ceeb);
 }
-.pricingChild{
+.pricingChild {
   flex-basis: 250px;
   margin-bottom: 5rem;
   color: black;
   background-color: #fff;
   text-align: center;
 }
-.pricingChild h2{
+.pricingChild h2 {
   margin-top: 1rem;
   font-size: 2rem;
-  color:  skyblue;
+  color: skyblue;
 }
-.pricingChild p{
+.pricingChild p {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
- 
 }
-.pricingChild h1{
-  padding-top:4rem;
+.pricingChild h1 {
+  padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: gray;
@@ -422,25 +433,26 @@ swiper {
   padding-bottom: 0.5rem;
   color: #fff;
 }
-.hrpricing{
+.hrpricing {
   width: 80%;
   text-align: center;
   margin-left: 1.5rem;
   color: black;
 }
-.ptype{
- background-color: gray;
- font-size: 15px;
- margin-top: 2rem ;
+.ptype {
+  background-color: gray;
+  font-size: 15px;
+  margin-top: 2rem;
 }
-.btn-pricing{
+.btn-pricing {
   margin-bottom: 1rem;
   border-radius: 17px;
   padding: 5px;
   width: 65%;
   border: 1px solid gray;
 }
-.footerParent, .footerFormsParent{
+.footerParent,
+.footerFormsParent {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -450,26 +462,25 @@ swiper {
   flex-shrink: 1;
   text-align: center;
   color: #fff;
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
 }
 
-.footerChild
-{
+.footerChild {
   margin-top: 5rem;
   flex-basis: 250px;
 }
 .footerChild button,
-.footerChild h1, 
-.footerChild h5{
+.footerChild h1,
+.footerChild h5 {
   margin-bottom: 1rem;
 }
-.btn-iconone{
+.btn-iconone {
   padding: 2rem;
   background-color: #0b8cf4;
   border-radius: 100%;
   border: none;
 }
-.footerFormsChild{
+.footerFormsChild {
   flex-basis: 500px;
   height: auto;
   background-color: white;
@@ -477,28 +488,29 @@ swiper {
   padding: 4px;
   text-align: left;
 }
-.footer-input{
- margin-left: 4rem;
- width: 70%;
- margin-bottom: 1rem;
- border: 1px solid gray;
- padding: 6px;
+.footer-input {
+  margin-left: 4rem;
+  width: 70%;
+  margin-bottom: 1rem;
+  border: 1px solid gray;
+  padding: 6px;
 }
-.form-btn{
+.form-btn {
   margin-left: 4rem;
   border: 1px solid gray;
   padding: 6px;
   color: gray;
   margin-bottom: 2.5rem;
 }
-.form-btn:hover{
+.form-btn:hover {
   background-color: #0b8cf4;
   color: white;
 }
-.downloadParent, .downloadbtnParent{
+.downloadParent,
+.downloadbtnParent {
   display: flex;
   flex-direction: row;
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
   justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
@@ -506,20 +518,20 @@ swiper {
   flex-shrink: 1;
   text-align: center;
 }
-.downloadChild{
+.downloadChild {
   color: #fff;
   margin-top: 5rem;
 }
-.downloadbtnChild{
+.downloadbtnChild {
   flex-basis: 300px;
   margin-top: 1rem;
 }
-.subscribeChild{
+.subscribeChild {
   margin-top: 2.5rem;
   flex-basis: 100%;
 }
 
-.footerdownloadbtn{
+.footerdownloadbtn {
   border-radius: 29px;
   padding: 4px 1rem;
   background: none;
@@ -527,21 +539,21 @@ swiper {
   color: #fff;
   max-width: 75%;
 }
-.footerInput{
+.footerInput {
   padding: 15px 10rem 15px 15px;
   width: 40%;
   border-radius: 29px;
   border: none;
   margin-left: 1rem;
 }
-.footerbutton{
-  padding: 15px 25px ;
+.footerbutton {
+  padding: 15px 25px;
   border-radius: 29px;
   border: none;
   background-color: #0b8cf4;
   color: #fff;
 }
-.footersmallIcons{
+.footersmallIcons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -549,25 +561,50 @@ swiper {
   flex-wrap: wrap;
   flex-shrink: 1;
   flex-grow: 1;
-  background: linear-gradient(to right,#00008b, #87CEEB);
+  background: linear-gradient(to right, #00008b, #87ceeb);
 }
 
-.footersmallIconsChild{
+.footersmallIconsChild {
   margin-top: 2.5rem;
 }
+.termsParent{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.termsChild{
+  flex-basis: auto;
+}
+
 @media (max-width: 768px) {
   #navSection {
     display: none;
   }
+  .navbar {
+    flex-direction: column; /* On small screens, stack items vertically */
+    
+  }
 
   #navMenu {
-    float: right;
+    order: 1; /* By default, the button will be the last item, but you can reorder it */
+    margin-left: auto; /* Push the button to the right */
+    
   }
-  .videoContainer button{
+  .videoContainer button {
     margin-left: 5rem;
   }
-  .container{
+  .container {
     flex-wrap: wrap;
+  }
+  .homeItems {
+    padding: 0 1rem;
+  }
+  .resurface-logo {
+    margin-left: 1rem;
   }
 }
 @media (min-width: 1024px) {

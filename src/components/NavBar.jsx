@@ -5,14 +5,15 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 function NavBar() {
   const links = [
-    { name: "FEATURE" },
-    { name: "OUR THEME" },
-    { name: "PRICING" },
-    { name: "CONTACT US" },
+    {name: "HOME", link:"#HOME"},
+    { name: "FEATURE", link:"#FEATURE" },
+    { name: "OUR THEME", link:"#THEME" },
+    { name: "PRICING", link:"#PRICING" },
+    { name: "CONTACT US", link:"#CONTACT" },
   ];
 
   function createNavLink(navdetail) {
-    return <NavLinks linkName={navdetail.name} />;
+    return <NavLinks linkName={navdetail.name} link={navdetail.link} />;
   }
 
   const [isHover, setHover] = useState(false);
@@ -31,22 +32,21 @@ function NavBar() {
 
   return (
     <div className="navBox">
-      <div className="navContainer">
-        <nav className="nav">
-          <img className="resurface-logo" src={logo} alt="#"></img>
-          <section id="navSection">
-            <a href="/#" className="navItems border-items">
-              HOME
-            </a>
-            {links.map(createNavLink)}
-            <a href="/#" className="btn-home" id="download-btn">
-              Download
-            </a>
-          </section>
-          <button id="navMenu" onClick={toggleMenu}>
-            <MenuIcon className="navMenu" />
-          </button>
-        </nav>
+      <div style={{position:"fixed", width:"100%", zIndex:"100"}}>
+        <div className="navContainer">
+          <nav className="nav">
+            <img className="resurface-logo" src={logo} alt="#"></img>
+            <section id="navSection">
+              {links.map(createNavLink)}
+              <a href="https://play.google.com/store/apps/details?id=com.shiftechafrica.resurface" className="btn-home" id="download-btn">
+                Download
+              </a>
+            </section>
+            <button id="navMenu" onClick={toggleMenu}>
+              <MenuIcon className="navMenu" />
+            </button>
+          </nav>
+        </div>
       </div>
       {isMenu && (
         <div className="menuItems animate__animated animate__bounceInDown">

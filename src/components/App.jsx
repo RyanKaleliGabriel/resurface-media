@@ -1,4 +1,5 @@
 import React from "react";
+
 import NavBar from "./NavBar";
 import Home from "./Home";
 import About from "./About";
@@ -12,18 +13,17 @@ import Footer from "./Footer";
 function App() {
   return (
     <div>
-        <NavBar/>
-        <Home/>
-        <About/>
-        <Feature/>
-        <Work/>
-        <Video/>
-        <Theme/>
-        <Pricing/>
-        <Testimonial/>
-        <Footer/>
+      <NavBar />
+      <Home />
+      <About />
+      <Feature />
+      <Work />
+      <Video />
+      <Theme />
+      <Pricing />
+      <Testimonial />
+      <Footer />
     </div>
-
   );
 }
 

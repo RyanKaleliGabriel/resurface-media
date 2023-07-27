@@ -74,7 +74,7 @@ function Feature() {
     );
   }
   return (
-    <div className="feature">
+    <div id="FEATURE" className="feature">
       <div className="container">
         <div className="first-features">{features.map(createEntry)}</div>
         <div className="image-container">

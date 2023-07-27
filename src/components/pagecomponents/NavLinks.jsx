@@ -11,7 +11,7 @@ function NavLinks(props) {
 
   return (
     <a
-      href="/#"
+      href={props.link}
       className="navItems"
       style={isHover ? { border: "1px solid white" } : {}}
       onMouseOut={handleMouseOut}

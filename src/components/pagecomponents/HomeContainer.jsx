@@ -52,7 +52,9 @@ function HomeContainer(props) {
             <p>
             {item.paragraph}
             </p>
+            <a href="https://play.google.com/store/apps/details?id=com.shiftechafrica.resurface">
             <button className="btn-home">{item.buttonOne}</button>
+            </a>
             <button className="btn-home">{item.buttonTwo}</button>
           </div>
           <div className="homeItems" style={{ flexBasis: "350px" }}>

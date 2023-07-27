@@ -89,7 +89,7 @@ export default function Footer() {
 
   const currentYear = new Date().getFullYear();
   return (
-    <div>
+    <div id="CONTACT">
       <div className="footerParent">{footerdataone.map(createentryone)}</div>
       <div className="footerFormsParent">
         <div className="footerFormsChild" style={{ marginTop: "2rem" }}>
@@ -143,6 +143,7 @@ export default function Footer() {
               marginLeft: "4rem",
               marginBottom: "3rem",
               marginTop: "3rem",
+              color:"grey"
             }}
           >
             For more info kindly get in touch with us through our channels.
@@ -176,17 +177,17 @@ export default function Footer() {
       </div>
       <div className="downloadParent">
         <div className="subscribeChild">
-          <p style={{ color: "white" }}>
+          <p  style={{ color: "white" }}>
             &copy; {currentYear} All rights reserved |{" "}
-            <a style={{ color: "white", marginTop:"4px" }} href="">
+            <a style={{ color: "white", marginTop: "4px" }} href="/#">
               Terms & Conditions
             </a>{" "}
             |{" "}
-            <a style={{ color: "white", marginTop:"4px" }} href="">
+            <a style={{ color: "white", marginTop: "4px" }} href="/#">
               Privacy Policy
             </a>{" "}
             | Powered by{" "}
-            <a style={{ color: "white", marginTop:"4px" }} href="">
+            <a style={{ color: "white", marginTop: "4px" }} href="/#">
               SHIFTECH AFRICA
             </a>
           </p>

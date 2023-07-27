@@ -14,7 +14,7 @@ function Work() {
         <div className="centeredDivChild">
           <h2 style={{ marginBottom: "1.5rem" }}>How It Works</h2>
           <hr className="horizontalLine" style={{ marginBottom: "1.5rem" }} />
-          <p>This are a few ways you can use our app.</p>
+          <p style={{color:"grey"}}>This are a few ways you can use our app.</p>
         </div>
       </div>
       <div className="workContainer">
